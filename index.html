@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html><html lang="en">
   <head>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
@@ -9,11 +9,16 @@
     />
 
     <title>Waikiki Tattoos</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <meta name="description" content="Professional Waikīkī tattoo artist specializing in American Traditional tattoos. Book your tattoo in Honolulu today.">
     <meta name="keywords" content="Waikīkī tattoos, Honolulu tattoo artist, American Traditional tattoos Hawaii">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div
@@ -27,6 +32,7 @@
           <div class="flex w-12 items-center justify-end">
             <button
               class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+              aria-label="Open navigation menu"
             >
               <div class="text-white" data-icon="List" data-size="24px" data-weight="regular">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
@@ -68,10 +74,7 @@
         <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
           <!-- Replace placeholder images with your tattoo images -->
           <div class="flex flex-col gap-3">
-            <div
-              class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg hover:scale-105 transition-transform duration-300"
-              style='background-image: url("https://via.placeholder.com/300");'
-            ></div>
+            <img src="https://via.placeholder.com/300" alt="American Traditional tattoo" loading="lazy" class="w-full aspect-square object-cover rounded-lg hover:scale-105 transition-transform duration-300" />
           </div>
           <!-- Duplicate & add more images as needed -->
         </div>
@@ -94,7 +97,7 @@
             </div>
             <a href="https://instagram.com/dustingormley" target="_blank"
               class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#20464b] text-white text-sm font-bold leading-normal tracking-[0.015em] w-full max-w-[480px] @[480px]:w-auto">
-              <span class="truncate">Follow me Instagram</span>
+              <span class="truncate">Follow on Instagram</span>
             </a>
           </div>
         </div>
@@ -120,9 +123,7 @@
               if(typeof Tally!="undefined"){Tally.loadEmbeds();}
               else{
                 d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){
-                  e.src=e.dataset.tallySrc;
-                });
-              }
+@@ -126,40 +129,40 @@
             };
             if(typeof Tally!="undefined") v();
             else if(d.querySelector('script[src="'+w+'"]')==null){
@@ -148,7 +149,7 @@
         <!-- Footer -->
         <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
           <div class="flex flex-wrap justify-center gap-4">
-            <a href="#"><div class="text-[#8dc6ce]" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
+            <a href="https://instagram.com/dustingormley" target="_blank" rel="noopener"><div class="text-[#8dc6ce]" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                   <path
                     d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
