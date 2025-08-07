@@ -1,1 +1,8 @@
+# Ignore Tailwind binary
 tailwindcss
+
+# Optional: ignore build artifacts and lock files
+output.css
+bun.lock
+bun_modules/
+node_modules/
