@@ -1,8 +1,13 @@
 # Ignore Tailwind binary
 tailwindcss
 
-# Optional: ignore build artifacts and lock files
+# Ignore build artifacts and lock files
 output.css
 bun.lock
-bun_modules/
+bun.lockb
+
+# Ignore node modules
 node_modules/
+
+# macOS system files
+.DS_Store
